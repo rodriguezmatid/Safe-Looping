@@ -9,13 +9,13 @@
     - [The Problem](#features)
     - [Why Is This Problem Worth Solving?](#why-is-this-problem-worth-solvin)
 - [Our Solution](#🌟-our-solution)
+    - [Model Archithecture](#model-architecture)
+    - [Why Giza?](#why-giza)
+    - [Code Walkthrough](#code-walkthrough)
 - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-    - [Clone Repository](#Clone-repository)
     - [Install Dependencies](#Install-dependencies)
 - [Tool Usage](#usage)
   - [Examples](#command-examples)
-- [Testing](#testing)
 - [License](#license)
 - [Contact](#contact)
 - [FAQs / Troubleshooting](#faqs--troubleshooting)
@@ -92,11 +92,24 @@ Addressing this problem is important for several reasons:
  ![Static Badge](https://img.shields.io/badge/Safe_Looping_v1%20-%20black?style=for-the-badge&label=Gizathon)     
 
 ### Model Architecture
-![SafeLoopingArchitecture](/workspaces/Safe-Looping/images/SafeLooping - Architecture Overview.png)
+
+![SafeLoopingArchitecture](images/SafeLooping-Architecture _Overview.png)
 
 ### Giza Implementation
+
 ### Why Giza?
-### Directory List
+
+### 1. Accessible, Quality-Assured Datasets
+Giza Datasets open the door to an enriched pool of structured and curated blockchain data, vital for any linear regression. By providing open-sourced datasets, Giza addresses one of the critical challenges in blockchain analytics: the availability of high-quality data and keeping that data updated
+
+#### 1. Computational Efficiency in Asymmetric Environments
+ The GIZA platform provides an environment where the asymmetry in computational efficiency is pronounced — for instance, between blockchain computations and off-chain computations.
+
+#### 2. Cost & Development Effectiveness
+
+ Giza provides the structure and support for the execution of verifiable machine learning models. Computational tasks like proof generation are typically more resource-intensive than inference or proof verification. GIZA offers the infrastructure to perform these intensive tasks more efficiently, without the need to develop them ourselves.
+
+### Code Walkthrough
 
 <br>
 
