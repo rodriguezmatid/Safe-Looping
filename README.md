@@ -2,7 +2,7 @@
 
 > 🏗️ `Work In Progress` : This repo is being actively developed and does not represent final quality of the model.
 
-> 📊 For statical and math analysis deep dive on our model, please visit our paper release: 
+> 📊 For an in-depth statistical and mathematical analysis of our model, please refer to our detailed paper:
 
 
 ####   
@@ -49,7 +49,6 @@ And this delicate balance is at the heart of the issues we are tackling.
 
 SafeLooping's mission is to assist Defi investors in the path to sustainable investment by **calculating the optimal looping lever (leverage rate) for an expected weekly price variation**, by ensuring that profits don't come at the cost of security through an **expected return model that penalizes liquidation risk by leverage rate**.
 
-<br>
 
 ## **📊 Context**
 
@@ -103,7 +102,7 @@ Addressing this problem is important for several reasons:
 
 ### Model Architecture
 
-![SafeLoopingArchitecture](images/SafeLooping-Architecture _Overview.png)
+![SafeLoopingArchitecture](images/architecture_overview.png)
 
 ### Giza Implementation
 
@@ -115,7 +114,7 @@ Addressing this problem is important for several reasons:
 - **Inference Endpoint Deployment**
 - **AI Actions**
 - **zk-Proof Generation**
-- **Giza Agent _(coming soon)_***
+- Giza Agent _(coming soon)_
 
 ## Why Giza?
 
