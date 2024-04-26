@@ -104,6 +104,8 @@ Addressing this problem is important for several reasons:
 
 ![SafeLoopingArchitecture](images/architecture_overview.png)
 
+
+
 ### Giza Implementation
 
 - **Giza Datasets** 
