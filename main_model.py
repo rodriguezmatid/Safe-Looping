@@ -6,6 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 from skl2onnx import convert_sklearn
 from skl2onnx.common.data_types import FloatTensorType
+import matplotlib.dates as mdates
 
 pd.set_option('display.max_columns', None)  # Mostrar todas las columnas
 pd.set_option('display.width', 1000) 
@@ -16,6 +17,8 @@ df = pd.read_csv('./results/final_combined_dataset.csv')
 
 # # Some data engineering #
 selected_columns = ['avg_stableBorrowRate_eth_rates', 'avg_supplyRate_eth_rates', 'price_eth', 'deposits_volume_v3_eth_daily_deposits_borrows', 'borrows_volume_v3_eth_daily_deposits_borrows']
+
+functions.price_variation_graph(df) # price variation of eth during the data time
 
 # print(df[selected_columns].head())
 

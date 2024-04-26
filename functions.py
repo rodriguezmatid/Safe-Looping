@@ -1,4 +1,7 @@
 import pandas as pd
+import seaborn as sns
+import matplotlib.dates as mdates
+import matplotlib.pyplot as plt
 
 def calculate_estimated_change(row, coef_dict):
     return (row['avg_stableBorrowRate_eth_rates'] * coef_dict['avg_stableBorrowRate_eth_rates'] +
@@ -31,3 +34,22 @@ def transpose_and_rename(csv_file_path, output_file_path):
 
     # Optionally print the final DataFrame to verify
     print(transposed_df.head())
+
+def price_variation_graph(df):
+    df['date_eth_volume'] = pd.to_datetime(df['date_eth_volume'])
+    df.sort_values('date_eth_volume', inplace=True)
+
+    sns.set(style="darkgrid")
+    fig, ax = plt.subplots(figsize=(15, 7))  # Create the figure and axes for the graph
+    sns.lineplot(ax=ax, x='date_eth_volume', y='price_eth', data=df)
+    ax.set_title('ETH Price variation in the time')
+    ax.set_xlabel('Date')
+    ax.set_ylabel('Price')
+
+    ax.xaxis.set_major_locator(mdates.AutoDateLocator())  # Locator automático
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))  # Formato de fecha
+
+    plt.setp(ax.get_xticklabels(), rotation=45, ha='right')
+    plt.tight_layout()
+    plt.savefig('./images/eth_price_variation_in_time.png')
+    plt.show()
