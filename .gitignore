@@ -1,3 +1,6 @@
 old/
 .env
 .env/
+.env*
+/old/
+/.env/
