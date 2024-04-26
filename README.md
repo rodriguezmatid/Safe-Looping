@@ -97,8 +97,15 @@ Addressing this problem is important for several reasons:
 
 ### Giza Implementation
 
-- Giza Datasets 
-    - a
+- **Giza Datasets** 
+    - [Tokens Daily Information](https://datasets.gizatech.xyz/hub/aggregated-datasets/tokens-daily-information)
+    - [AAVE Daily Deposits & Borrows](https://datasets.gizatech.xyz/hub/aave/daily-deposits-and-borrows-v3)
+    - [AAVE Daily Exchange Rates & Indexes](https://datasets.gizatech.xyz/hub/aave/daily-exchange-rates-and-indexes-v3)
+
+- **Inference Endpoint Deployment**
+- **AI Actions**
+- **zk-Proof Generation**
+- **Giza Agent _(coming soon)_***
 
 ### Why Giza?
 
@@ -115,7 +122,7 @@ Giza Datasets open the door to an enriched pool of structured and curated blockc
 
 ### 1. datasets.py
 
-This module is responsible for loading all datasets downloaded from Giza, including daily exchange rates, indices, and data on daily deposits and borrows from Aave.
+This module is responsible for loading all datasets downloaded from Giza, including daily exchange rates, indexes, and data on daily deposits and borrows from Aave.
 
 #### Key Features:
 - **Data Import:** Load multiple datasets into the Python environment.
