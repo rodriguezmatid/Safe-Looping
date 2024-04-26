@@ -110,16 +110,17 @@ df_cleaned['difference_in_estimation'] = df_cleaned['estimated_weekly_price_chan
 # Saving filtered_df to a CSV
 df_cleaned.to_csv('./results/dataset_with_prediction.csv', index=False)
 
-# # Plotting the difference between the estimation and the real change price
-# plt.figure(figsize=(12, 6)) # Set the size of the plot
-# plt.plot(df_cleaned.index, df_cleaned['estimated_weekly_price_change'], label='Estimated Weekly Price Change', color='blue') # Plot the line for estimated_weekly_price_change
-# plt.plot(df_cleaned.index, df_cleaned['weekly_change_eth'], label='Actual Weekly Change', color='red') # Plot the line for weekly_change_eth
-# plt.plot(df_cleaned.index, df_cleaned['difference_in_estimation'], label='Difference', color='green', linestyle='--') # Plot the line for the difference
-# plt.legend()
-# plt.title('Comparison of Estimated and Actual Weekly Price Changes')
-# plt.xlabel('Index')
-# plt.ylabel('Change')
-# plt.show() # Display the plot
+# Plotting the difference between the estimation and the real change price
+plt.figure(figsize=(12, 6)) # Set the size of the plot
+plt.plot(df_cleaned.index, df_cleaned['estimated_weekly_price_change'], label='Estimated Weekly Price Change', color='blue') # Plot the line for estimated_weekly_price_change
+plt.plot(df_cleaned.index, df_cleaned['weekly_change_eth'], label='Actual Weekly Change', color='red') # Plot the line for weekly_change_eth
+plt.plot(df_cleaned.index, df_cleaned['difference_in_estimation'], label='Difference', color='green', linestyle='--') # Plot the line for the difference
+plt.legend()
+plt.title('Comparison of Estimated and Actual Weekly Price Changes')
+plt.xlabel('Index')
+plt.ylabel('Change')
+plt.savefig('./images/comparison_plot.png') # Save the plot as a PNG file
+plt.show() # Display the plot
 
 # # Define the initial types for the ONNX model
 # initial_type = [('float_input', FloatTensorType([None, len(features)]))]
@@ -179,4 +180,5 @@ ax.set_xlabel('Predicted Weekly Change (y_pred)')
 ax.set_ylabel('Expected Returns')
 ax.set_title('Expected Returns vs. Predicted Weekly Change for Different Leverage Levels')
 ax.legend(title='Leverage Levels')
+plt.savefig('./images/expected_returns_plot.png')
 plt.show()

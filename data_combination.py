@@ -1,5 +1,4 @@
 import pandas as pd, numpy as np
-import os
 
 start_date = "2023-01-26"
 end_date = "2024-01-24"

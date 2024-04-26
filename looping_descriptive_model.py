@@ -180,4 +180,5 @@ for p in ax.patches:
                 xytext = (0, 9), 
                 textcoords = 'offset points')
 
+plt.savefig('./images/frequency_barplot.png')
 plt.show()
