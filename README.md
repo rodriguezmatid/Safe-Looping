@@ -9,7 +9,7 @@
 
 ##  🗂️ Table of Contents
 
-- [Leverage & Liquidations: The Defi Dance Off](#leverage--liquidations-the-defi-dance-off)
+- [Leverage & Liquidations: The Defi Dance Off](#📝-leverage--liquidations-the-defi-dance-off)
     - [Context](#context)
     - [The Problem](#features)
     - [Why Is This Problem Worth Solving?](#why-is-this-problem-worth-solvin)
@@ -20,9 +20,11 @@
         - [datasets.py](#1-datasetspy)
         - [datacombination.py](#2-data_combinationpy)
         - [looping_descriptivemodel.py](#3-looping_descriptivemodelpy)
+        - [main_model.py](#4-main_modelpy)
+        - [verifiable_inference.py](#5-verifiable_inferencepy)
 - [Prerequisites](#prerequisites)
     - [Install Dependencies](#Install-dependencies)
-- [Tool Usage](#usage)
+- [Usage](#usage)
   - [Examples](#command-examples)
 - [License](#license)
 - [Contact](#contact)
@@ -160,7 +162,7 @@ This module includes several components that analyze the risk of liquidation bas
 
 This script is central to our predictive analytics, encompassing several models designed to forecast financial metrics and optimize investment strategies based on data processed by previous modules. The functionalities are outlined below:
 
-#### **1. 7-Day Price Variation Predictive Model**
+#### **4.1) 7-Day Price Variation Predictive Model**
 
 This component utilizes a linear regression model to predict weekly price variations of cryptocurrencies. The model is trained on historical data to identify trends and forecast future price movements.
 
@@ -168,7 +170,7 @@ This component utilizes a linear regression model to predict weekly price variat
 - **Model Training:** Train a linear regression model on historical price data to predict 7-day price variations.
 - **Data Analysis:** Analyze price trends to improve the accuracy of predictions.
 
-#### **2. Predictive Model Deployment to GIZA & Endpoint Creation**
+#### **4.2) Predictive Model Deployment to GIZA & Endpoint Creation**
 
 After training, the 7-Day Price Variation Predictive Model is prepared for deployment in a production environment.
 
@@ -180,7 +182,7 @@ After training, the 7-Day Price Variation Predictive Model is prepared for deplo
 #### Outcome:
 - The deployment culminates in a zkML Weekly Price Variation Linear Regression Endpoint, enabling secure and scalable predictions.
 
-#### **3. Expected Return Model**
+#### **4.3) Expected Return Model**
 
 This predictive model aims to optimize financial returns by calculating the optimal looping level based on the weekly expected return, influenced by predicted weekly price variations.
 
@@ -191,29 +193,18 @@ This predictive model aims to optimize financial returns by calculating the opti
 #### Functionality:
 - **Return Optimization:** Analyzes combined data to identify the looping level that maximizes expected returns based on predicted price variations.
 
+### 5. `verifiable_inference.py`
 
-## Installation
+This script is designed to interface with the deployed zkML Weekly Price Variation Linear Regression Endpoint via Giza's AI Action SDK. It enables the execution of verifiable inferences, providing both predictions and cryptographic proofs of the computation's integrity.In other words, this allows users to run verifiable inferences using our deployed linear regression model endpoint.
 
-To set up the project environment, follow these steps:
-1. Clone the repository: `git clone [repository-url]`
-2. Install required Python packages: `pip install -r requirements.txt`
+#### Key Processes:
+- **Model Interaction:** Connect to the zkML Weekly Price Variation Linear Regression Endpoint.
+- **Inference Execution:** Run the predictive model to forecast weekly price variations.
+- **zk Proof Generation:** Automatically generate a downloadable zero-knowledge proof confirming the integrity of the inference process.
 
-## Usage
+#### Outcome:
+- Users receive a predicted weekly price variation along with a zk proof, which can be downloaded (*or used as an input on-chain --coming soon*) to verify the authenticity and correctness of the inference.
 
-To run the scripts, navigate to the project directory and execute:
-```bash
-python datasets.py
-python data_combination.py
-python looping_descriptivemodel.py
-<br>
-
-## 🔍 **Prerequisites**
-
-Before installing the tool, you need to ensure that you have `pnpm` installed, as it is required to manage the project's dependencies.
-
-<br>
-
-### **Install dependencies**
 
 ## Project Dependencies
 
