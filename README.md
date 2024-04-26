@@ -8,7 +8,7 @@
     - [Context](#context)
     - [The Problem](#features)
     - [Why Is This Problem Worth Solving?](#why-is-this-problem-worth-solvin)
-    - [Our Solution](#🌟-our-solution)
+- [Our Solution](#🌟-our-solution)
 - [Prerequisites](#prerequisites)
     - [Installation](#installation)
     - [Clone Repository](#Clone-repository)
@@ -45,24 +45,17 @@ SafeLooping's mission is to assist Defi investors in the path to sustainable inv
 
 In the volatile world of DeFi, investors chase high returns, often embracing excessive risks. 
 
-```
-💡 A promising yet complex strategy that has emerged within this context is the use of "looping strategies." These strategies involve **reinvesting borrowed assets back into lending platforms to create a leverage loop**, amplifying the potential returns on the initial capital.
-```
+
+> 💡 A promising yet complex strategy that has emerged within this context is the use of "looping strategies." These strategies involve **reinvesting borrowed assets back into lending platforms to create a leverage loop**, amplifying the potential returns on the initial capital.
+
 
 Amidst rising bullish sentiment, over-optimism leads to over-leverage, setting the stage for familiar pitfalls.
 
 > “The volume of loans liquidated on Ethereum lending markets **has hit its highest monthly value since June 2022** (Terra crash)**, despite April not even being half over.”** - *[The Block Data](https://www.theblock.co/post/288212/aprils-first-two-weeks-saw-more-ethereum-loans-liquidated-than-any-month-since-june-2022)*
 > 
+**Lending markets**, crucial in this leverage play, facilitate strategies that magnify returns through **deposit and borrow _"loops"_**.
 
-**Lending markets**, crucial in this leverage play, facilitate strategies that magnify returns through 'leverage loops,' where borrowed assets are reinvested to enhance potential gains. However, the allure of these looping strategies comes with heightened risks of liquidation.
-
- ****
-
-https://www.theblock.co/data/decentralized-finance/cryptocurrency-lending/lending-market-liquidations-daily/embed
-
-As DeFi evolves, the sophistication of investment strategies must also advance. Looping strategies, with their potential for high yield, epitomize this advancement but are not without their dangers.  
-
-<br>
+ However, the allure of these looping strategies comes with heightened risks of liquidation.
 
 ## Problem
 
@@ -96,6 +89,15 @@ Addressing this problem is important for several reasons:
 
 ## 🌟 **Our Solution**
 
+ ![Static Badge](https://img.shields.io/badge/Safe_Looping_v1%20-%20black?style=for-the-badge&label=Gizathon)     
+
+### Model Architecture
+![SafeLoopingArchitecture](/workspaces/Safe-Looping/images/SafeLooping - Architecture Overview.png)
+
+### Giza Implementation
+### Why Giza?
+### Directory List
+
 <br>
 
 ## 🔍 **Prerequisites**
@@ -104,13 +106,20 @@ Before installing the tool, you need to ensure that you have `pnpm` installed, a
 
 <br>
 
-### **1. Installing Node.js & pnpm**
+### **Install dependencies**
 
+## Project Dependencies
 
-### **2. Clone repository**
-
-
-### **3. Install dependencies**
+- [**pandas**](https://pandas.pydata.org/)
+- [**numpy**](https://numpy.org/)
+- [**certifi**](https://pypi.org/project/certifi/)
+- [**polars**](https://github.com/pola-rs/polars)
+- [**matplotlib**](https://matplotlib.org/)
+- [**seaborn**](https://seaborn.pydata.org/)
+- [**giza_datasets**](https://gizatech.xyz/)
+- [**sklearn (scikit-learn)**](https://scikit-learn.org/stable/)
+- [**skl2onnx**](https://github.com/onnx/sklearn-onnx)
+- [**giza_actions**](https://gizatech.xyz/)
 
 <br>
 
@@ -126,7 +135,6 @@ Before installing the tool, you need to ensure that you have `pnpm` installed, a
 
 This command will execute all automated tests associated with the tool, verifying that all components operate as expected.
 
-```
 ## 📄 **License**
 
 [Placeholder] This project is licensed under the MIT License. For more details, see the LICENSE file in the repository.
@@ -167,8 +175,7 @@ We adhere to Semantic Versioning (SemVer) for this project. The changelog is reg
 To view the versions available, visit the Releases section of our GitHub repository.
 
 <br>
-
- ![Static Badge](https://img.shields.io/badge/zkZync_Era_upgrade_verification_tool%20-%20black?style=for-the-badge&label=moonsong%20labs)                                                                               
+                                                                          
 
 
 
