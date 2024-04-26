@@ -109,26 +109,26 @@ Addressing this problem is important for several reasons:
 
 ### Why Giza?
 
-### 1. Accessible, Quality-Assured Datasets
+#### 1. Accessible, Quality-Assured Datasets
 Giza Datasets open the door to an enriched pool of structured and curated blockchain data, vital for any linear regression. By providing open-sourced datasets, Giza addresses one of the critical challenges in blockchain analytics: the availability of high-quality data and keeping that data updated
 
-#### 1. Computational Efficiency in Asymmetric Environments
+#### 2. Computational Efficiency in Asymmetric Environments
  The GIZA platform provides an environment where the asymmetry in computational efficiency is pronounced — for instance, between blockchain computations and off-chain computations.
 
-#### 2. Cost & Development Effectiveness
+#### 3. Cost & Development Effectiveness
  Giza provides the structure and support for the execution of verifiable machine learning models. Computational tasks like proof generation are typically more resource-intensive than inference or proof verification. GIZA offers the infrastructure to perform these intensive tasks more efficiently, without the need to develop them ourselves.
 
 ### Modules Description
 
-### 1. datasets.py
+### 1. `datasets.py`
 
-This module is responsible for loading all datasets downloaded from Giza, including daily exchange rates, indexes, and data on daily deposits and borrows from Aave.
+This module is responsible for loading all datasets downloaded from Giza.
 
 #### Key Features:
 - **Data Import:** Load multiple datasets into the Python environment.
 - **Preprocessing:** Initial data cleaning and formatting.
 
-### 2. data_combination.py
+### 2. `data_combination.py`
 
 This script combines and preprocesses the loaded datasets to prepare them for analysis.
 
@@ -136,9 +136,9 @@ This script combines and preprocesses the loaded datasets to prepare them for an
 - **Data Merging:** Merge multiple datasets using specific filtering criteria.
 - **Column Renaming and Sorting:** Rename and reorder dataset columns for uniformity and ease of analysis.
 - **Calculation of Statistics:** Compute means, minimums, maximums, and moving averages for various financial metrics such as prices, volumes, deposits, borrows, and rates.
-- **Date Filtering:** Focus on the dataset from January 27, 2023, to January 23, 2024, to match the availability of rate data for Aave.
+- **Date Filtering:** Focus on the dataset from January 27, 2023, to January 23, 2024, to match the availability of rate data for Aave. _This is a restriciont  that we made to match our model to giza datasets, as more data became available this restriction will not apply, making our model more robust._
 
-### 3. looping_descriptivemodel.py
+### 3. `looping_descriptivemodel.py`
 
 This module includes several components that analyze the risk of liquidation based on different looping levels with cryptocurrencies.
 
@@ -147,6 +147,8 @@ This module includes several components that analyze the risk of liquidation bas
 2. **Liquidation 7 Day Check:** Monitor the collateral health over a 7-day period for various loop levels to identify potential risks.
 3. **Liquidation Occurrence Matrix:** Map the frequency of liquidations starting from a specific day for each loop level.
 4. **Liquidation Probability by Loop Level:** Estimate the percentage probability of liquidation for each loop level.
+
+### 4. `main_model.py´
 
 ## Installation
 
