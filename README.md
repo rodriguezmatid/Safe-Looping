@@ -1,7 +1,5 @@
 # 🔄 Safe Looping - Gizathon Project
 
-> 🏗️ `Work In Progress` : This repo is being actively developed and does not represent final quality of the model.
-
 > 📊 For an in-depth statistical and mathematical analysis of our model, please refer to our detailed paper:
 
 
@@ -14,7 +12,9 @@
     - [The Problem](#features)
     - [Why Is This Problem Worth Solving?](#why-is-this-problem-worth-solvin)
 - [Our Proposal: Smarter & Safer Looping](#🌟-our-proposal-smarter--safer-looping)
-    - [Model Archithecture](#model-architecture)
+    - [Model Architecture](#model-architecture)
+    - [The Team: Blockchain, Data & Finance Lovers](#🚀-the-team-blockchain-data--finance-lovers)
+    - [Giza Implementation Hightlights](#giza-implementation-highlights)
     - [Why Giza?](#why-giza)
     - [Modules Description](#modules-description)
         - [datasets.py](#1-datasetspy)
@@ -22,14 +22,9 @@
         - [looping_descriptivemodel.py](#3-looping_descriptivemodelpy)
         - [main_model.py](#4-main_modelpy)
         - [verifiable_inference.py](#5-verifiable_inferencepy)
-- [Prerequisites](#prerequisites)
-    - [Install Dependencies](#Install-dependencies)
-- [Usage](#usage)
-  - [Examples](#command-examples)
-- [License](#license)
+- [Project Dependencies](#project-dependencies)
 - [Contact](#contact)
-- [FAQs / Troubleshooting](#faqs--troubleshooting)
-- [Versioning and Changelog](#versioning-and-changelog)
+- [Acknowledgements](#versioning-and-changelog)
 
 <br>
 
@@ -100,13 +95,33 @@ Addressing this problem is important for several reasons:
 
  ![Static Badge](https://img.shields.io/badge/Safe_Looping_v1%20-%20black?style=for-the-badge&label=Gizathon)     
 
-### Model Architecture
+### **Model Architecture**
 
 ![SafeLoopingArchitecture](images/architecture_overview.png)
 
 
 
-### Giza Implementation
+## **🚀 The Team: Blockchain, Data & Finance Lovers**
+
+We are passionate about blockchain, data analytics, and financial systems. Our team is comprised of experts who specialize in various aspects of blockchain technology, decentralized finance, and data science. Learn more about each of our team members below:
+
+### Matias Rodriguez Pisani
+**Python Lover - Liquidation & Snipping Bot DeFi Maker**  
+Matias specializes in developing sophisticated liquidation and sniping bots for DeFi platforms. His expertise in Python and blockchain technology drives our project's technical solutions.  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/rodriguezmatid/)
+
+### Tomas Moreno
+**Yield Hunter - Lending & Collateral Product Manager**  
+With a keen focus on maximizing yields and optimizing collateral management, Tomas brings a wealth of knowledge in managing lending products effectively. 
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/tomaspm/)
+
+### Ceferino Pettovello
+**Data Wizard - Decision Analytics Senior Associate**  
+Ceferino is our go-to expert for all things data. With extensive experience in decision analytics, he ensures our data strategies align with our objectives and drive meaningful insights.  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/ceferinopettovello7/)
+
+
+### **Giza Implementation Highlights**
 
 - **Giza Datasets** 
     - [Tokens Daily Information](https://datasets.gizatech.xyz/hub/aggregated-datasets/tokens-daily-information)
@@ -222,21 +237,10 @@ This script is designed to interface with the deployed zkML Weekly Price Variati
 
 <br>
 
-## 🛠️ **Usage**
-
-<br>
-
-### **Run the Tool**
-
-<br>
-
 ## 🧪 Testing
 
 This command will execute all automated tests associated with the tool, verifying that all components operate as expected.
 
-## 📄 **License**
-
-[Placeholder] This project is licensed under the MIT License. For more details, see the LICENSE file in the repository.
 
 ## 📬 **Contact**
 
