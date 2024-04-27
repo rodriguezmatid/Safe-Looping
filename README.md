@@ -1,6 +1,6 @@
 # 🔄 Safe Looping - Gizathon Project
 
-> 📊 For an in-depth statistical and mathematical analysis of our model, please refer to our detailed paper in the ´stats&math` directory in this repo or [visualize online here](https://drive.google.com/file/d/1ri0aJM6NtKeQ9-618xtHlU_hgucvGhk8/view?usp=sharing).
+> 📊 For an in-depth statistical and mathematical analysis of our model, please refer to our detailed paper in the ´stats&math` directory in this repo or [visualize it online here](https://drive.google.com/file/d/1ri0aJM6NtKeQ9-618xtHlU_hgucvGhk8/view?usp=sharing).
 
 ##  🗂️ Table of Contents
 
@@ -103,10 +103,12 @@ Safe Looping is an innovative solution designed to address the inherent challeng
 
 To streamline our analysis and enhance the clarity of our model, we have assumed the use of the ETH-USDC pair as a primary example. This decision serves as a simplification to focus our predictive modeling and strategy development efforts effectively. Utilizing the ETH-USDC pair allows us to maintain consistency and precision in our simulations and forecasts, thereby providing a solid foundation for evaluating our financial strategies within a controlled and simplified environment.
 
+
 ### **Model Architecture**
 
-![SafeLoopingArchitecture](images/architecture_overview.png)
+You can find a intro video explaining the [model architecture here.](https://www.loom.com/share/b935ad3d66bf49f68b403dabe14870ea?sid=31ce36cb-6144-44e5-86e3-f3bb2fa47bbd)
 
+![SafeLoopingArchitecture](images/architecture_overview.png)
 
 
 ## **🚀 The Team: Blockchain, Data & Finance Lovers**
